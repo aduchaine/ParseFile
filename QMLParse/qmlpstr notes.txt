@@ -1,0 +1,41 @@
+QML PStr() notes
+
+
+	// for signals the requisite files are not 100% mandatory if a different way to navigate is used (not a next button, for example)
+	/*	//		compID			qml component		insertion			first requisite file	->		primary requisite file
+	if (str_id == 110) // Spacer									Spacer.qml
+	if (str_id == 111) // ReadOnlyText								ReadOnlyText.qml
+	if (str_id == 112) // SLText				134					SLText.qml				->		WriteLineText.qml
+	if (str_id == 113) // DDMenu				135,136,137			DDMenu.qml				->		DropDownMenu.qml/ButtonProp1.qml/MouseProp1.qml/KeyboardProp1.qml
+	if (str_id == 114) // ACTMenu				135,136,137			ACTMenu.qml				->		DropDownText.qml/WriteLineText.qml/ButtonProp1.qml/MouseProp1.qml/KeyboardProp1.qml
+	if (str_id == 115) // KeyboardProp1								KeyboardProp1.qml
+	if (str_id == 116) // GreyButton								GreyButton.qml			->		ButtonProp1.qml/MouseProp1.qml
+	if (str_id == 117) // PreviousButton		133					PreviousButton.qml		->		ButtonProp1.qml/MouseProp1.qml
+	if (str_id == 118) // NextButton			130,131,132			NextButton.qml			->		ButtonProp1.qml/MouseProp1.qml
+	if (str_id == 122) // InterpageProcesses	174					InterpageProcesses.qml
+	if (str_id == 167) // KeyboardProp1								KeyboardProp1.qml
+	if (str_id == 169) // PreviousButton		183					PreviousButton.qml		->		ButtonProp1.qml/MouseProp1.qml
+	if (str_id == 170) // NextButton			180,181,182			NextButton.qml			->		ButtonProp1.qml/MouseProp1.qml
+	if (str_id == 171) // ReadOnlyText								ReadOnlyText.qml
+	if (str_id == 172) // QuitButton								QuitButton.qml			->		ButtonProp1.qml/MouseProp1.qml
+	if (str_id == 173) // ErrorButton			131,132,181,182		ErrorButton.qml			->		ButtonProp1.qml/MouseProp1.qml
+	if (str_id == 175) // Transitions								Transitions.qml
+	if (str_id == 176) // StaticTransitions							StaticTransitions.qml
+
+	if (str_id == 130) // onValidData:								-> assumes NextButton.qml will be used but, doesn't require it
+	if (str_id == 131) // onInvalidData:			various			-> assumes NextButton.qml/GreyButton.qml/ErrorButton.qml files will be used but, doesn't require them
+	if (str_id == 132) // onNoData:					various			-> assumes NextButton.qml/GreyButton.qml/ErrorButton.qml files will be used but, doesn't require them
+	if (str_id == 133) // onPreviousPage:							-> assumes PreviousButton.qml will be used but, doesn't require it
+	if (str_id == 134) // onStringData:								-> assumes SLText.qml will be used but, doesn't require it
+	if (str_id == 135) // onDataCode:				various			-> assumes DDMenu.qml/ACTMenu.qml files will be used but, doesn't require them
+	if (str_id == 136) // onSendWords:				various			-> assumes DDMenu.qml/ACTMenu.qml files will be used but, doesn't require them
+	if (str_id == 137) // onSendWordCount:			various			-> assumes DDMenu.qml/ACTMenu.qml files will be used but, doesn't require them
+	if (str_id == 138) // onSendFocusType:							-> assumes VKboard.qml will be used but, doesn't require it
+	if (str_id == 139) // onShowLine:								-> assumes VKboard.qml will be used but, doesn't require it
+	if (str_id == 174) // signal navigateSideways/savepageInput		-> assumes InterpageProcesses.qml will be used but, doesn't require it
+	if (str_id == 180) // onValidData:								-> assumes NextButton.qml will be used but, doesn't require it
+	if (str_id == 181) // onInvalidData:			various			-> assumes NextButton.qml/GreyButton.qml/ErrorButton.qml files will be used but, doesn't require them
+	if (str_id == 182) // onNoData:					various			-> assumes NextButton.qml/GreyButton.qml/ErrorButton.qml files will be used but, doesn't require them
+	if (str_id == 183) // onPreviousPage:							-> assumes PreviousButton.qml will be used but, doesn't require it
+	if (str_id == 184) // onProcessedData:			none
+	*/

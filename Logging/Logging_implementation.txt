@@ -1,0 +1,29 @@
+Debug and Error logging setup:
+
+Outside of requiring 3rd party libraries noted below, the system should be 100% autonomous.
+It can be placed into another C++ project (maybe VS2013 required?) and be usable immediately after following the directions below.
+
+1) 3rd party libraries are required for directory setup - boost::filesystem
+	- these can be omitted but, the full path must be known to create and use the logging system
+		- these can overwrite what is currently located in logging.h at "LogDirectories"
+	- if used, their notations must be completed to use
+		- see the include in logging.cpp for specifics
+
+2)	set a root folder name
+	- location isn't important as long as it remains with the program it was implemented into and the folder name can be found along the "current working directory" path
+	- "root_foldername" is set in logging.h
+	
+3) default directory endpoints are provided but others may be created along with other log categories
+	- these are located in logging.h
+	- if these values are changed, they must also be changed within the source file, logging.cpp - they are not hard to find
+
+4) #include "Logging\logging.h" or the full path to any source file needing usage
+
+5) declare "Logging Log;" in main or the source file if individual access is only needed
+
+5) other notes:
+	- file log writing is off except for error logs
+	- there are only a few class variables, conflicts are possible but unlikely
+	- class accessibility is setup as an extern
+	- access is attained with "Log."
+	
